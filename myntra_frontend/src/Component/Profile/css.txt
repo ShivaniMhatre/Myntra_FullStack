@@ -1,0 +1,249 @@
+
+#body {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+#main-body {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid purple; */
+}
+
+#top {
+  width: 100%;
+  border-bottom: 1px solid rgb(194, 192, 192);
+  margin-top: 2%;
+  padding-bottom: 10px;
+}
+
+#top > h2 {
+  font-size: 1em;
+}
+
+#top > p {
+  font-size: 0.9em;
+}
+
+#middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left {
+  width: 18%;
+  border-right: 1px solid rgb(226, 225, 225);
+  /* border-bottom: 1px solid brown; */
+}
+
+#left > div {
+  width: 80%;
+}
+
+#left > div > div {
+  padding: 12% 0;
+  border-bottom: 1px solid rgb(221, 220, 220);
+}
+#left h2 {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: grey;
+  /* margin: 10px 0; */
+}
+#left > div > div p {
+  /* line-height: 25px; */
+}
+
+#prof {
+  font-weight: bold;
+  color: rgb(3, 173, 3);
+}
+
+#right {
+  width: 80%;
+  border: 1px solid rgb(219, 219, 218);
+  margin-top: 2%;
+}
+
+#right-content {
+  width: 70%;
+  /* border: 1px solid goldenrod; */
+  margin: auto;
+  /* margin-top: 2%; */
+}
+
+#heading {
+  border-bottom: 1px solid rgb(223, 218, 218);
+  padding: 5px 45px;
+}
+#heading > h2 {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+#details {
+  display: flex;
+  width: 80%;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+  padding: 2% 0;
+}
+#details > div p {
+  line-height: 50px;
+  font-size: 1.1em;
+}
+
+#edit-btn {
+  width: 80%;
+  height: 45px;
+  margin: 5% auto 7% auto;
+}
+#edit-btn > button {
+  width: 100%;
+  height: 100%;
+  background-color: #ff3f6c;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+}
+
+/* edit profile modal */
+
+.editProfileModal {
+  width: 40%;
+  height: 60%;
+  background-image: linear-gradient(purple, green);
+  box-shadow: 0px 2px 5px black;
+  position: fixed;
+  left: 30%;
+  top: 20%;
+  z-index: 999;
+}
+.editProfileModal > p {
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.closeProfileContainer {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+.updateProfileForm {
+  width: 80%;
+  margin: 5% auto;
+}
+.updateProfileForm > div > input {
+  width: 100%;
+  margin: 3% 0;
+  height: 45px;
+  padding-left: 3%;
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.1em;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+}
+.updateProfileForm > div > input[type="submit"] {
+  border: 2px solid white;
+  cursor: pointer;
+}
+.updateProfileForm > div > input[type="submit"]:hover {
+  background-color: purple;
+  border: 2px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

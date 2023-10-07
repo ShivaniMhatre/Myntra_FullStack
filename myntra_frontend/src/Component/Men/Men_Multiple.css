@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
+#menMultiple_body {
+  width: 100%;
+  margin-top: 11vh;
+  /* border: 2px solid black; */
+}
+
+#heading-1 {
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid green; */
+  padding-top: 10px;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+#heading-2 {
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid green; */
+  padding-top: 10px;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+/* #head-1,
+  #recommendations {
+    border-bottom: 1px solid rgb(220, 217, 217);
+  } */
+
+#head-1 {
+  display: flex;
+  width: 100%;
+
+}
+
+#heading-3 {
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+#filter-heading {
+  width: 20%;
+  /* border: 1px solid red; */
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+#three-options-heading {
+  width: 40%;
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+#recommemdations {
+  width: 30%;
+  /* border: 1px solid red; */
+}
+
+#recommemdations>select {
+  width: 80%;
+  height: 70%;
+  /* border: 1px solid black; */
+  padding-left: 15px;
+  background: white;
+  margin-top: 8px;
+  /* border-color: #cbcbce; */
+}
+
+#recommemdations>select>option>span {
+  font-weight: bolder;
+}
+
+#main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  /* border-top: 1px solid rgb(220, 217, 217); */
+}
+
+#allfilter {
+  width: 17%;
+  /* border: 1px solid black; */
+  border-right: 1px solid rgb(220, 217, 217);
+}
+
+#filter-1 {
+  border-bottom: 1px solid rgb(220, 217, 217);
+  padding-bottom: 20px;
+
+}
+
+#filter-1>h4 {
+  padding: 10px 25px;
+}
+
+.left {
+  display: flex;
+  padding-left: 25px;
+}
+
+.left>p {
+  padding-left: 10px;
+  font-size: small;
+}
+
+.left>p>span {
+  font-size: smaller;
+}
+
+#filter-2 {
+  border-bottom: 1px solid rgb(220, 217, 217);
+  padding-bottom: 20px;
+}
+
+#filter-2>h4 {
+  padding: 10px 25px;
+}
+
+#filter-2>p {
+  color: rgb(255, 129, 157);
+  padding: 5px 30px;
+}
+
+#filter-3 {
+  border-bottom: 1px solid rgb(220, 217, 217);
+  padding-bottom: 20px;
+}
+
+#filter-3>h4 {
+  padding: 10px 25px;
+}
+
+#filter-4 {
+  border-bottom: 1px solid rgb(220, 217, 217);
+  padding-bottom: 20px;
+}
+
+#filter-4>h4 {
+  padding: 10px 25px;
+}
+
+.color-size {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 5px 5px;
+}
+
+#green {
+  background-color: green;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#pink {
+  background-color: pink;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#black {
+  background-color: black;
+}
+
+#gray {
+  background-color: gray;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellowgreen {
+  background-color: yellowgreen;
+}
+
+#filter-4>p {
+  color: rgb(255, 129, 157);
+  padding: 5px 30px;
+}
+
+#filter-5 {
+  /* border-bottom: 1px solid rgb(220, 217, 217); */
+  padding-bottom: 20px;
+}
+
+#filter-5>h4 {
+  padding: 10px 25px;
+}
+
+#product {
+  width: 80%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+#image {
+  width: 21%;
+  height: 350px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.imgsize {
+  width: 100%;
+  height: 250px;
+  border: 1px solid black;
+}
+
+.imgsize>img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.detail {
+  padding-left: 10px;
+}
+
+.line-through {
+  text-decoration: line-through;
+  font-size: 0.9em;
+  color: grey;
+}
+
+.span-color {
+  color: orange;
+  font-size: 0.9em;
+}
+
+#product {
+  width: 81%;
+  border: 2px solid black;
+}
+
+.men_product {
+  width: 20%;
+  height: 50vh;
+  border: 1px solid red;
+  margin-top: 10px;
+}
+
+#imgsize {
+  width: 90%;
+  height: 40vh;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#imgsize>img {
+  width: 100%;
+  height: 100%;
+}
+
+#men_detail {
+  width: 90%;
+  margin: auto;
+}
+
+#men_detail>h2{
+  color:red;
+}
+#men_detail>p>span:nth-child(2){
+  text-decoration: line-through;
+}

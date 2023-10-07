@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+#home{
+    width: 100%;
+    margin-top: 11vh;
+    border: 2px solid black;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+#slider{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#slider>div{
+    width: 100%;
+    height: 300px;
+}
+#slider>div>img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#DealOfDay{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#DealOfDay>div:nth-child(1){
+    margin-top: 5px;
+}
+#DealOfDay>div:nth-child(2){
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+#DealOfDay>div:nth-child(2)>div{
+    width: 12.5%;
+    height: 210px;
+    /* border: 1px solid green; */
+}
+#DealOfDay>div:nth-child(2)>div>img{
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+}
+#brands{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#brands>div:nth-child(1){
+    margin-top: 5px;
+}
+#brands>div:nth-child(2){
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#brands>div:nth-child(2)>div{
+    width: 12%;
+    height: 210px;
+    /* border: 1px solid green; */
+}
+#brands>div:nth-child(2)>div>img{
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,74 @@
+#footer {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+  
+  #footer-child {
+    width: 100%;
+    margin: 5% auto;
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #useful-links {
+    margin-top: 20px;
+  }
+  #onlineShopping {
+    width: 15%;
+    /* border: 1px solid blue; */
+  }
+  
+  ul {
+    padding-top: 15px;
+  }
+  
+  li {
+    list-style: none;
+    color: gray;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 25px;
+  }
+  
+  #customerPolicies {
+    width: 15%;
+    /* border: 1px solid blue; */
+  }
+  
+  #experience {
+    width: 30%;
+    /* border: 1px solid blue; */
+  }
+  #experience > div > img {
+    margin-top: 25px;
+    width: 160px;
+    height: 40px;
+  }
+  #social-link {
+    margin-top: 20px;
+  }
+  #experience > h5 {
+    margin-top: 20px;
+  }
+  
+  #guarantee {
+    width: 30%;
+  }
+  
+  p,
+  span {
+    color: gray;
+    line-height: 27px;
+  }
+  
+  /* js added clasList */
+  
+  .logs {
+    width: 50%;
+    height: 35px;
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+  }
+  
