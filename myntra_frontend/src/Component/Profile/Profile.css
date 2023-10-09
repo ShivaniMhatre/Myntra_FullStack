@@ -111,7 +111,7 @@
   .editProfileModal {
     width: 40%;
     height: 60%;
-    background:purple;
+    background:rgb(255,63,108);
     box-shadow: 0px 2px 5px black;
     position: fixed;
     left: 30%;
@@ -149,10 +149,10 @@
     border: 2px solid white;
     cursor: pointer;
   }
-  .updateProfileForm > div > input[type="submit"]:hover {
+  /* .updateProfileForm > div > input[type="submit"]:hover {
     background-color: purple;
     border: 2px solid green;
-  }
+  } */
   /* Footer */
   
   #footer {

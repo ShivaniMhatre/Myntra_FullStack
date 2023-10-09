@@ -1,7 +1,7 @@
 import UserModal from "../Modals/User.modal.js";
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import ProductModal from "../Modals/Product.modal.js";
+// import ProductModal from "../Modals/Product.modal.js";
 
 export const Register = async (req, res) => {
     try {
@@ -40,7 +40,7 @@ export const Register = async (req, res) => {
 
 export const Login = async (req, res) => {
     try {
-        const { email, password } = req.body.userData;
+        const { email, password } = req.body;
         if (!email || !password) return res.json({ success: false, message: "All fields are mandtory.." })
 
         const user = await UserModal.findOne({ email })
@@ -102,5 +102,39 @@ export const Get_CurrentUser = async (req, res) => {
 
     } catch (error) {
         return res.json({ success: false, message: error })
+    }
+}
+
+
+export const editProfile = async (req, res) => {
+    try {
+        const { token } = req.body;
+        const { email, password } = req.body.prevValue;
+        // if(!name||!password||!token) return res.json({success:false,message:"All Fields Are Required"})
+        if (!token) return res.json({ success: false, message: "Token Is Required.." })
+
+        const decodeData = jwt.verify(token, process.env.JWT_SECRET)
+
+        if (!decodeData) {
+            return res.json({ success: false, message: "Token Not Valid" })
+        }
+
+        const userId = decodeData?.userId;
+
+        const hashPassword = await bcrypt.hash(password, 10)
+
+        const user = await UserModal.findByIdAndUpdate(
+            userId,
+            { email, password: hashPassword },
+            { new: true }
+        )
+        if(user){
+            await user.save();
+            return res.json({success:true,message:"Profile Updated Successfully",updateUser:user});
+        }
+
+
+    } catch (error) {
+        return res.json({ success: false, error: error.message })
     }
 }

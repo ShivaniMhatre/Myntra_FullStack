@@ -63,9 +63,9 @@ const Profile = () => {
   const submitUpdateProfileDetails = async (e) => {
     e.preventDefault();
 
-    const { name, password, confirmPassword } = prevValue;
+    const { email, password, confirmPassword } = prevValue;
 
-    if (name && password && confirmPassword) {
+    if (email && password && confirmPassword) {
       if (password === confirmPassword) {
         const token = JSON.parse(localStorage.getItem("Token"));
         const response = await api.post("/editprofile", {
@@ -83,7 +83,7 @@ const Profile = () => {
         toast.warn("password doesnot match");
       }
     } else {
-      toast.warn("all fields are mandatory");
+      toast.error("all fields are mandatory");
     }
   };
 
@@ -108,11 +108,11 @@ const Profile = () => {
           >
             <div>
               <input
-                type="text"
+                type="email"
                 onChange={updateProfileDetails}
-                placeholder="Update Name"
-                value={prevValue.name}
-                name="name"
+                placeholder="Update Email"
+                value={prevValue.email}
+                name="email"
               />
             </div>
             <div>

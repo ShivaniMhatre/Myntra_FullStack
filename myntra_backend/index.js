@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import cors from 'cors';
 import { checkseller } from './Middlewares/AllMiddleware.js';
-import {Get_CurrentUser, Login, Register } from './Controllers/User.controller.js';
+import {Get_CurrentUser, Login, Register, editProfile } from './Controllers/User.controller.js';
 import { AddProduct, GetEditProduct, Get_Men_Product, Get_Your_Product, SingleProduct, updateyourProduct } from './Controllers/Product.controller.js';
 import { AddToCart, GetCartProduct, RemoveCartData, placeOrder } from './Controllers/Buyer.controller.js';
 
@@ -29,6 +29,7 @@ app.post('/removeItem',RemoveCartData)
 app.post('/placeOrder',placeOrder)
 app.patch('/updateproduct',checkseller,updateyourProduct)
 app.post("/geteditproduct", checkseller, GetEditProduct);
+app.post("/editprofile",editProfile)
 
 mongoose.connect(process.env.MONGO_URL).then(() => {
     console.log("Connected to DB")
