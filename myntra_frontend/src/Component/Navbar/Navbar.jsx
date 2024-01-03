@@ -42,6 +42,7 @@ const Navbar = () => {
                     <p>BEAUTY</p>
                     <p>STUDIO<sup>NEW</sup></p>
                     {state?.user?.role == 'Seller' && <p onClick={()=>route('/add_product')}>ADD PRODUCT</p>}
+                    {state?.user?.role == 'Seller' && <p onClick={()=>route('/yourProduct')}>YOUR PRODUCT</p>}
                 </div>
                 <div id='search'>
                     <div>

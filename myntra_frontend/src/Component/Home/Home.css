@@ -7,7 +7,7 @@
 #home{
     width: 100%;
     margin-top: 11vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     font-weight: 600;
     letter-spacing: 5px;
 }

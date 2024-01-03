@@ -17,7 +17,7 @@ const Register = () => {
     const handleSubmit = async(event) => {
         event.preventDefault();
 
-        event.preventDefault();
+        //  
         // console.log(userData,"20")
         if (userData.name && userData.email && userData.password && userData.confirmPassword && userData.role) {
             // console.log(userData,"22")

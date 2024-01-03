@@ -15,7 +15,7 @@ import Cart from './Component/Cart/Cart';
 import Update_Product from './Component/Product/Update_Product';
 import YourProduct from './Component/Product/YourProduct';
 import Single from './Component/Product/Single';
-// import Footer from './Component/Home/Footer';
+import Footer from './Component/Home/Footer';
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
         <Route exact path='/profile' element={<Profile/>}/>
         <Route exact path='/cart' element={<Cart/>}/>  
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

@@ -40,14 +40,14 @@ export const Register = async (req, res) => {
 
 export const Login = async (req, res) => {
     try {
-        const { email, password } = req.body;
+        const { email, password } = req.body.loginData;
         if (!email || !password) return res.json({ success: false, message: "All fields are mandtory.." })
 
         const user = await UserModal.findOne({ email })
         if (!user) return res.json({ success: false, message: "User not found.." })
 
         if (user.isBlocked) {
-            return res.status(404).json({ succes: false, message: "You Are Blocked .Contact Us" })
+            return res.status(404).json({ success: false, message: "You Are Blocked .Contact Us" })
         }
 
         const isPasswordRight = await bcrypt.compare(password, user.password);
@@ -63,7 +63,7 @@ export const Login = async (req, res) => {
             // console.log(token, "token her")
             return res.json({ success: true, message: "Login Successfull.", userData: userObeject, token: token })
         }
-        console.log(userObeject, "data")
+        // console.log(userObeject, "data")
         return res.json({ success: false, message: "Password is wrong." })
     } catch (error) {
         return res.json({ success: false, message: error })

@@ -7,23 +7,23 @@ import axios from 'axios'
 import api from '../Config/API';
 const Login = () => {
     const { state, Login } = useContext(AuthContext);
-    const [userData, setUserData] = useState({ email: '', password: '' })
+    const [loginData, setLoginData] = useState({ email: '', password: '' })
     const route = useNavigate();
 
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-        setUserData({ ...userData, [name]: value });
+        setLoginData({ ...loginData, [name]: value });
     }
     const handleSubmit = async (event) => {
         event.preventDefault();
-        if (userData.email && userData.password) {
-            const response = await api.post("/login", { userData });
+        if (loginData.email && loginData.password) {
+            const response = await api.post("/login", { loginData });
             if (response.data.success) {
-                const userData=response.data.userData;
-                const token=response.data.token;
-                Login(userData,token)
-                setUserData({ email: "", password: "" })
+                const userData = response.data.userData;
+                const token = response.data.token;
+                Login(userData, token)
+                setLoginData({ email: "", password: "" })
                 route('/')
                 toast.success(response.data.message)
             } else {
